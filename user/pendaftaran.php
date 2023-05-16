@@ -3,6 +3,7 @@ session_start();
 if (empty($_SESSION['username'])) {
   header("location:../index.php?message=belum_login");
 }
+$_SESSION['id_userr'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,10 +104,20 @@ if (empty($_SESSION['username'])) {
                 </div>
 
                 <div class="col">
+                  <?php
+                  include '../connection/connection.php';
+                  $id_usr =  $_SESSION['id_userr'];
+                  $mysql = "SELECT * FROM user WHERE id_user = $id_usr";
+                  $query = mysqli_query($connect, $mysql);
+                  ($data = mysqli_fetch_array($query))
+                  ?>
 
-                  <input type="text" class="form-control bg-transparent text-white font-weight-normal" placeholder="Nama" name="nama">
+                  <input class="form-control bg-transparent text-white font-weight-normal" placeholder="Nama" name="nama" type="text" value="<?= $data['id_user'] ?> - <?= $id_usr == $data['id_user'] ? $data['nama'] : "" ?>">
 
                 </div>
+
+
+
                 <div class="mb-1">
                   <select class="dropdown-input form-select text-white font-weight-normal " name="dropdown_dokter" aria-label="Default select example">
                     <option selected>Dokter [Spesialisasi]</option>
@@ -118,8 +129,7 @@ if (empty($_SESSION['username'])) {
                     ?>
                       <option value="<?= $data_dokter['id_dokter'] ?>"><?= $data_dokter['nama'] ?> [ <?= $data_dokter['spesialisasi'] ?> ]</option>
                     <?php
-                    }
-                    ?>
+                    } ?>
                   </select>
                 </div>
                 <div class="col">

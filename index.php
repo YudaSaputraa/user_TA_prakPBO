@@ -125,6 +125,12 @@
 
 <body>
     <div class="main-login">
+        <?php
+        include 'connection/connection.php';
+        $mysql = "SELECT * FROM user";
+        $query = mysqli_query($connect, $mysql);
+        ($data_user = mysqli_fetch_array($query))
+        ?>
         <form method="POST" action="operation/login_process.php">
             <div class="login">
 
@@ -148,6 +154,7 @@
                         ?>
                     </div>
                 </center>
+
 
                 <div class="inputan">
                     <input type="text" name="username" required="">

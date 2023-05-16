@@ -3,6 +3,7 @@ session_start();
 if (empty($_SESSION['username'])) {
     header("location:../index.php?message=belum_login");
 }
+$_SESSION['id_userr'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
