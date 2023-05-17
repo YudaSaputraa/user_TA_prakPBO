@@ -112,7 +112,6 @@ $_SESSION['id_userr'];
           ?>
         </tbody>
       </table>
-
     </div>
   </div>
   <footer class="bg-dark py-4 mt-auto">

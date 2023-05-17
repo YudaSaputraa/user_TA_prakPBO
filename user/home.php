@@ -139,7 +139,7 @@ $_SESSION['id_userr'];
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="../assets/gambar01.png" class="d-block w-100" alt="...">
+                                    <img src="../assets/bg-doctor.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="../assets/gambar02.jpg" class="d-block w-100" alt="...">
@@ -171,7 +171,7 @@ $_SESSION['id_userr'];
 
                 </div>
                 <div class="card-body ms-5 col">
-                    <a href="jadwal_dokter.php"><img src="../assets/jadwal_icon.png" class="icon-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Reservasi Saya" alt=""></a>
+                    <a href="reservasiSaya.php"><img src="../assets/jadwal_icon.png" class="icon-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Reservasi Saya" alt=""></a>
 
                 </div>
             </div>
