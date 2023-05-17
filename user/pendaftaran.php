@@ -65,7 +65,7 @@ $_SESSION['id_userr'];
             <a class="nav-link text-white active" href="pendaftaran.php">Pendaftaran</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="daftar_klinik.php">Reservasi Saya</a>
+            <a class="nav-link text-secondary" href="reservasiSaya.php">Reservasi Saya</a>
           </li>
         </ul>
       </div>
@@ -111,13 +111,8 @@ $_SESSION['id_userr'];
                   $query = mysqli_query($connect, $mysql);
                   ($data = mysqli_fetch_array($query))
                   ?>
-
                   <input class="form-control bg-transparent text-white font-weight-normal" placeholder="Nama" name="nama" type="text" value="<?= $data['id_user'] ?> - <?= $id_usr == $data['id_user'] ? $data['nama'] : "" ?>">
-
                 </div>
-
-
-
                 <div class="mb-1">
                   <select class="dropdown-input form-select text-white font-weight-normal " name="dropdown_dokter" aria-label="Default select example">
                     <option selected>Dokter [Spesialisasi]</option>
@@ -149,7 +144,7 @@ $_SESSION['id_userr'];
     <div class="container px-5">
       <div class="row align-items-center justify-content-between flex-column flex-sm-row">
         <div class="col-auto">
-          <div class="small m-0 text-white">&copy; copyright 2022 by anonymous</div>
+          <div class="small m-0 text-white">&copy; copyright 2023 by anonymous</div>
         </div>
         <div class="col-auto">
           <a class="link-light small" href="#!">Privacy</a>

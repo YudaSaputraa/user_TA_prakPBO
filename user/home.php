@@ -98,7 +98,7 @@ $_SESSION['id_userr'];
                         <a class="nav-link text-secondary" href="pendaftaran.php">Pendaftaran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="pendaftaran.php">Reservasi Saya</a>
+                        <a class="nav-link text-secondary" href="reservasiSaya.php">Reservasi Saya</a>
                     </li>
 
                 </ul>
@@ -181,7 +181,7 @@ $_SESSION['id_userr'];
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0 text-white">&copy; copyright 2022 by anonymous</div>
+                    <div class="small m-0 text-white">&copy; copyright 2023 by anonymous</div>
                 </div>
                 <div class="col-auto">
                     <a class="link-light small" href="#!">Privacy</a>
